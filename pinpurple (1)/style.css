@@ -1,0 +1,50 @@
+body {
+  background-color: powderblue;
+  
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%
+}
+
+.image {
+  flex-basis: 40%
+}
+
+
+h1 {
+  color: white;
+  font-family: verdana;
+  font-size: 200%;
+  
+  border: 2px solid rgb(104, 21, 104);
+  background-color: plum;
+  text-align: center;
+  padding: 30px;
+  
+}
+
+
+
+
+p {
+  color: black;
+}
+
+#fixedbutton {
+    position: fixed;
+    top: 0px;
+    right: 0px; 
+    background-color: red;
+}
+#pinbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    background-color: blue;
+}
