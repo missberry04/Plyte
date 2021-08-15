@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+
+body {
+background-color: rgb(216,242,255) ;
+}
+.contact-section{
+  padding: 30px 0;
+}
+.contact-section h1{
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.contact-section h3{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  position: relative;
+  padding-right:30%;
+  padding-left:30%;
+  margin:15px 0;
+}
+
+.contact-section img{
+  width:40px;
+  height:40px;
+  align-items:center;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #8c28cf;
+  margin: 40px auto;
+}
+.contact-section p{
+  font-size:15px;
+  text-align:center;
+
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+  position: relative;
+  top:-40px;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #8c28cf;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #8c28cf;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #d81f2f;
+}
+
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #8c28cf;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
+html,body{
+  display: grid;
+  height: 100%;
+  align-items: center;
+  background:rgb(216,242,255);
+  overflow: hidden;
+}
+button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  margin: 0 35px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+button:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+button:last-child:hover{
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+button:first-child:before,
+button:last-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+button:first-child:hover:before,
+button:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
